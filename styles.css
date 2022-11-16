@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html,
+body,
+.sections-container,
+.section-two {
+    width: 100%;
+} */
+
+.s2-box1 {
+    position: relative;
+    width: 100%;
+}
