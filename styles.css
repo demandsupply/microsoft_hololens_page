@@ -15,7 +15,7 @@ body,
 body {
     width: 100%;
     margin: auto;
-    background-color: #000;
+    background-color: #191919;
 }
 
 p, a, i, h1, h2, h3, h4, h5, h6 {
@@ -292,7 +292,8 @@ video {
     text-align: center;
 }
 
-.section-four h1 {
+.section-four h1,
+.section-five h1 {
     margin: 100px auto 72px auto;
     text-align: center;
 }
@@ -312,4 +313,87 @@ video {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    font-weight: 700;
+}
+
+.section-five {
+    width: 80%;
+    margin: auto;
+}
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.customers-container {
+    margin-bottom: 80px;
+}
+
+.customers img {
+    padding: 25px 80px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    border-top: 2px solid rgb(82, 78, 78);
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 120px 0;
+}
+
+.socials i {
+    font-size: 32px;
+}
+
+.socials-left,
+.socials-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-columns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column a {
+    display: block;
+    flex: 1;
+    margin: 24px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 32px 0;
+}
+
+.footer-infos a,
+.footer-infos p {
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 12px;
+}
+
+.footer-infos-left a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-infos-right {
+    display: flex;
+    /* border: 1px solid #fff; */
+}
+
+.fa.fa-globe {
+    font-size: 24px;
 }
