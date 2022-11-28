@@ -22,7 +22,9 @@ p, a, i, h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-li a {
+li a,
+.learn a p,
+a {
     text-decoration: none;
 }
 
@@ -54,6 +56,40 @@ li a {
 .dropdown-content4 {
     display: none;
     margin: 1px solid #fff;
+}
+
+.watch a p,
+.learn p,
+.link p {
+    border-bottom: 2px solid #191919;
+}
+
+.menu-left ul li  a:hover,
+.arrow > p:hover,
+.watch a p:hover,
+.learn p:hover,
+.link p:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.learn.white p {
+    border-bottom: 2px solid #fff;
+    transition-duration: 0.2s;
+}
+
+.learn.blue p {
+    border-bottom: 2px solid #0078d4;
+    transition-duration: 0.2s;
+}
+
+.learn.white p:hover {
+    border-bottom: 2px solid #000;
+    transition-duration: 0.2s;
+}
+
+.learn.blue p:hover {
+    border-bottom: 2px solid #fff;
+    transition-duration: 0.2s;
 }
 
 .arrow {
@@ -115,8 +151,17 @@ button a {
     text-decoration: none;
 }
 
+button.blue:hover {
+    background-color: #026aba;
+    transition-duration: 0.5s;
+}
+
+button.white:hover a {
+    color: #191919;
+}
+
 .section-two {
-    margin: auto;
+    margin: 0 auto 32px;
 }
 
 .section-two h3 {
@@ -168,10 +213,6 @@ video {
     width: 80%;
     margin: auto;
     gap: 45px;
-}
-
-.s2-minibox {
-
 }
 
 .s2-minibox img {
@@ -244,6 +285,11 @@ video {
 
 .watch a {
     text-decoration: none;
+}
+
+.section-three {
+    border-top: 2px solid rgb(82, 78, 78);
+    padding-top: 80px;
 }
 
 .section-three,
@@ -396,4 +442,12 @@ video {
 
 .fa.fa-globe {
     font-size: 24px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover .fa.fa-globe {
+    text-decoration: none;
 }
