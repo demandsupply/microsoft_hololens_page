@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Segoe';
+    src: url(./Segoe\ UI.woff)format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe bold';
+    src: url(./Segoe\ UI\ Bold.woff) format('woff');
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -11,8 +21,13 @@ body,
     width: 100%;
 } */
 
+strong {
+    font-family: 'Segoe bold';
+}
+
 
 body {
+    font-family: 'Segoe';
     width: 100%;
     margin: auto;
     background-color: #191919;
@@ -20,6 +35,10 @@ body {
 
 p, a, i, h1, h2, h3, h4, h5, h6 {
     color: #fff;
+}
+
+p {
+    font-size: 17px;
 }
 
 li a,
@@ -52,10 +71,26 @@ a {
 
 .dropdown-content li,
 .dropdown-content2 li,
-.dropdown-content3 li,
+.dropdown-content3 li a,
+.dropdown-content4 li {
+    /* display: none; */
+    border: 1px solid #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content,
+.dropdown-content2,
+.dropdown-content3,
 .dropdown-content4 {
-    display: none;
-    margin: 1px solid #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: ;
+    border: 2px solid rgb(40, 169, 120);
 }
 
 .watch a p,
@@ -106,12 +141,21 @@ a {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    margin-top: 600px;
 }
 
 .learn.blue {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.learn.blue .fa-solid.fa-chevron-right {
+    margin-left: -24px;
+}
+
+.learn.white i {
+    margin-right: 32px;
 }
 
 .section-one {
@@ -166,7 +210,7 @@ button.white:hover a {
 
 .section-two h3 {
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
     margin: 100px auto 60px auto;
 }
 
@@ -189,6 +233,11 @@ button.white:hover a {
 .s2-sumbox img {
     width: 50px;
     margin-bottom: 20px;
+}
+
+.s2-sumbox > p {
+    /* border: 1px solid #fff; */
+    height: 56px;
 }
 
 .learn {
@@ -215,20 +264,38 @@ video {
     gap: 45px;
 }
 
-.s2-minibox img {
+.s2minibox {
+    flex: 2;
+}
+
+.s2-minibox {
+    flex: 1;
+}
+
+.s2-minibox img,
+.s2minibox img {
     width: 75px;
 }
 
-.s2-minibox h4 {
-    font-size: 28px;
+.s2-minibox h4,
+.s2minibox h4 {
+    font-size: 34px;
     margin: 50px 0 36px 0;
 }
 
-.s2-minibox > p {
+.s2-minibox > p,
+.s2minibox > p {
+    /* border: 1px solid #fff; */
+    height: 72px;
     margin: 60px 0 80px 0;
 }
 
+.s2-minibox > p {
+    padding-top: 20px;
+}
+
 .learn.white {
+    text-align: center;
     width: 250px;
     background-color: #fff;
     padding: 20px 50px;
@@ -249,7 +316,7 @@ video {
 }
 
 .learn.white a {
-    margin: auto;
+    margin: 0 auto;
 }
 
 .learn.white a p,
@@ -273,7 +340,7 @@ video {
 }
 
 .percentage p:first-of-type {
-    font-size: 60px;
+    font-size: 72px;
 }
 
 .watch {
@@ -281,6 +348,7 @@ video {
     align-items: center;
     gap: 12px;
     font-weight: 700;
+    padding-top: 12px;
 }
 
 .watch a {
@@ -307,7 +375,7 @@ video {
 
 .s3-box h1 {
     margin-top: 32px;
-    font-size: 36px;
+    font-size: 44px;
 }
 
 .s3-box {
@@ -393,7 +461,7 @@ video {
 }
 
 .socials i {
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .socials-left,
@@ -413,7 +481,7 @@ video {
     flex: 1;
     margin: 24px 0;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .footer-infos {
@@ -425,7 +493,7 @@ video {
 .footer-infos a,
 .footer-infos p {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 12px;
 }
 
@@ -441,7 +509,7 @@ video {
 }
 
 .fa.fa-globe {
-    font-size: 24px;
+    font-size: 29px;
 }
 
 footer a:hover {
