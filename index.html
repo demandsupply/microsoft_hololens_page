@@ -5,6 +5,7 @@
         <title>Microsoft Hololens | Mixed Reality Technology for Business</title>
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script src="./javascript.js"></script>
     </head>
     <body>
         <div class="menu-container">
@@ -15,40 +16,48 @@
                         <li><a style="font-size: 20px;" href="https://www.microsoft.com/en-us/hololens"><strong>HoloLens 2</strong></a></li>
                         <li><a href="https://www.microsoft.com/en-us/hololens/hardware">Device</a></li>
                         <li><a href="https://www.microsoft.com/en-us/hololens/buy">Pricing</a></li>
-                        <li class="dropdown">
+                        <li class="dropdown1">
                             <div class="arrow">
-                                <p>Industry</p>
+                                <p onclick="myFunction1()" class="droparrow">Industry</p>
                                 <i class="fa-solid fa-chevron-down"></i>    
                             </div>
-                            <ul class="dropdown-content">
-                                <li><a href="https://www.microsoft.com/en-us/hololens/industry-manufacturing">Manufacturing</a></li>
-                                <li><a href="https://www.microsoft.com/en-us/hololens/industry-healthcare">Healthcare</a></li>
-                                <li><a href="https://www.microsoft.com/en-us/hololens/industry-education">Education</a></li>
+                            <ul class="dropdown">
+                                <div id="drop1" class="content1">
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/industry-manufacturing">Manufacturing</a></li>
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/industry-healthcare">Healthcare</a></li>
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/industry-education">Education</a></li>
+                            
+                                </div>
                             </ul>
                         </li>
                         <li><a href="https://www.microsoft.com/en-us/hololens/apps">Solutions</a></li>
                         <li class="dropdown2">
                             <div class="arrow">
-                                <p>Partners</p>
+                                <p onclick="myFunction2()" class="droparrow">Partners</p>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <ul class="dropdown-content2">
-                                <li><a href="https://www.microsoft.com/en-us/hololens/mixed-reality-partners">Mixed reality partner overview</a></li>
-                                <li><a href="https://www.microsoft.com/en-us/hololens/partners">Find a partner</a></li>
-                                <li><a href="https://www.microsoft.com/en-us/hololens/partner-program">Become a partner</a></li>
-                                <li><a href="https://www.microsoft.com/hololens/mrpp">Join Mixed Reality Partner Program</a></li>
+                            <ul class="dropdown">
+                                <div id="drop2" class="content2">
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/mixed-reality-partners">Mixed reality partner overview</a></li>
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/partners">Find a partner</a></li>
+                                    <li><a href="https://www.microsoft.com/en-us/hololens/partner-program">Become a partner</a></li>
+                                    <li><a href="https://www.microsoft.com/hololens/mrpp">Join Mixed Reality Partner Program</a></li>
+                            
+                                </div>
                             </ul>
                         </li>
                         <li><a href="https://www.microsoft.com/en-us/hololens/developers">Developers</a></li>
                         <li class="dropdown3">
                             <div class="arrow">
-                                <p>Support</p>
+                                <p onclick="myFunction3()" class="droparrow">Support</p>
                                 <i class="fa-solid fa-chevron-down"></i>
                             </div>
-                            <ul class="dropdown-content3">
-                                <li><a href="https://docs.microsoft.com/hololens/">How-to and troubleshooting</a></li>
-                                <li><a href="https://docs.microsoft.com/en-us/windows/mixed-reality/">Developer documentation</a></li>
-                                <li><a href="https://www.microsoft.com/en-us/p/holoLens-2/91pnzzznzwcp/?activetab=pivot%3aoverviewtab">Purchase assistance</a></li>
+                            <ul class="dropdown">
+                                <div id="drop3" class="content3">
+                                    <li><a href="https://docs.microsoft.com/hololens/">How-to and troubleshooting</a></li>
+                                    <li><a href="https://docs.microsoft.com/en-us/windows/mixed-reality/">Developer documentation</a></li>
+                                    <li><a href="https://www.microsoft.com/en-us/p/holoLens-2/91pnzzznzwcp/?activetab=pivot%3aoverviewtab">Purchase assistance</a></li>    
+                                </div>
                             </ul>
                         </li>
                    </ul>
@@ -57,10 +66,11 @@
                     <ul>
                         <li class="dropdown4">
                             <div class="arrow">
-                                <p>All Microsoft</p>
-                                <i class="fa-solid fa-chevron-down"></i>
+                                <p onclick="myFunction()" class="droparrow">  All Microsoft <i class="fa-solid fa-chevron-down"></i>
+                                </p>
+                                
                             </div>
-                            <div class="dropdown-content4">
+                            <div id="drop4" class="dropdown content4">
                                 <ul class="main">
                                     <li><a href="#">Microsoft Security</a></li>
                                     <li><a href="#">Azure</a></li>
@@ -135,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="estimate">
+        <div class="estimate" id="top">
             <p><strong>Estimate your company's return on investment with Microsoft HoloLens 2.</strong></p>
             <div class="learn blue">
                 <a href="https://go.microsoft.com/fwlink/p/?LinkID=2185249&clcid=0x409&culture=en-us&country=US">
@@ -145,7 +155,7 @@
             </div>
         </div>
         <div class="sections-container">
-            <div class="section-one" id="top">
+            <div class="section-one">
                 <a class="backtotop" href="#top">
                     <i class="fa-solid fa-arrow-up"></i>
                 </a>
@@ -213,7 +223,8 @@
                     </div>
                 </div>
                 <div class="s2-box1">
-                    <video height="100%" width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/1a3b3e58-9012-4d00-a449-a91b15f20a77/793977e6-c248-48b7-9849-e6258030_6750.mp4"></video>
+                    <!-- <button class="play active">play</button> -->
+                    <video id="video1" controls height="100%" width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/1a3b3e58-9012-4d00-a449-a91b15f20a77/793977e6-c248-48b7-9849-e6258030_6750.mp4"></video>
                     <div class="s2-box1-1">
                         <div class="s2minibox">
                             <img src="./images/small1.png" alt="">
@@ -257,7 +268,7 @@
                     </div>
                 </div>
                 <div class="s2-box1">
-                    <video height="100%" width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/d128b7ff-c530-4a8e-ab81-8ad1bd871eed/4758b8d0-7045-46c5-a574-5c515b21_3400.mp4"></video>
+                    <video height="100%" controls width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/d128b7ff-c530-4a8e-ab81-8ad1bd871eed/4758b8d0-7045-46c5-a574-5c515b21_3400.mp4"></video>
                     <div class="s2-box1-1">
                         <div class="s2minibox">
                             <img src="./images/small2.png" alt="">
@@ -296,7 +307,7 @@
                     </div>
                 </div>
                 <div class="s2-box1">
-                    <video height="100%" width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/34693df0-f3d2-4f79-a882-c0088ba94e0d/dba61f87-35a7-4970-9b82-d06b2e0d_6750.mp4"></video>
+                    <video height="100%" controls width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/34693df0-f3d2-4f79-a882-c0088ba94e0d/dba61f87-35a7-4970-9b82-d06b2e0d_6750.mp4"></video>
                     <div class="s2-box1-1">
                         <div class="s2minibox">
                             <img src="./images/small3.png" alt="">
@@ -340,7 +351,7 @@
                     </div>
                 </div>
                 <div class="s2-box1">
-                    <video height="100%" width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/54610e91-5935-413b-9d0e-922b9eab8934/91d1b811-c1a2-48fd-a6e9-25adf200_6750.mp4"></video>
+                    <video height="100%" controls width="100%" src="https://wus-streaming-video-rt-microsoft-com.akamaized.net/54610e91-5935-413b-9d0e-922b9eab8934/91d1b811-c1a2-48fd-a6e9-25adf200_6750.mp4"></video>
                     <div class="s2-box1-1">
                         <div class="s2minibox">
                             <img src="./images/small4.png" alt="">
